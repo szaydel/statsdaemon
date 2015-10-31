@@ -615,7 +615,8 @@ func main() {
 	flag.Parse()
 
 	if *showVersion {
-		fmt.Printf("statsdaemon v%s (built w/%s)\n", VERSION, runtime.Version())
+		fmt.Printf("statsdaemon v%s (built w/%s)\n", APP_VERSION,
+		runtime.Version())
 		return
 	}
 
